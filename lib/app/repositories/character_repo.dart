@@ -8,7 +8,7 @@ import 'package:marvel_api/constants/url.dart';
 class CharacterRepository {
   Future<List<Character>> fetchCharactersByStartsWith(String startsWith) async {
     String url = 'https://gateway.marvel.com:443/v1/public/characters?' +
-        'nameStartsWith=$startsWith' + Constants.API_KEY;
+        'nameStartsWith=$startsWith&' + Constants.API_KEY;
         //'&ts=42&apikey=592bddb193bffbeb19346961c9f3e7ab&hash=2279ddd726d556fda9e8dcb4ce95c06b';
 
 
@@ -32,7 +32,7 @@ class CharacterRepository {
 
   Future<List<Comics>> comicsByCharacter(String charId) async {
     String url =
-        'https://gateway.marvel.com:443/v1/public/characters/$charId/comics?ts=42&apikey=592bddb193bffbeb19346961c9f3e7ab&hash=2279ddd726d556fda9e8dcb4ce95c06b';
+        'https://gateway.marvel.com:443/v1/public/characters/$charId/comics?' + Constants.API_KEY;
 
     var response = await http.get(url);
 
