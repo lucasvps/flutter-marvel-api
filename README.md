@@ -1,16 +1,17 @@
-# marvel_api
+# Heroes from Marvel - Flutter Application
 
-A new Flutter project.
 
-## Getting Started
+## About this project
 
-This project is a starting point for a Flutter application.
+The idea of this app is : 
+"Display marvel heroes and their respectives comics"
 
-A few resources to get you started if this is your first Flutter project:
+## Why ?
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This project is part of my personal portfolio, it was made to increase my development skills.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Functionalities
+
+- Search for heroes by name.
+- Add them to your favorites.
+- See the comics they were part of.

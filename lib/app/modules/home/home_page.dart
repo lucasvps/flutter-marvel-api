@@ -43,7 +43,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    controllerText.text = "";
+    controllerText.text = null;
 
     db.getFavorites().then((list) {
       controller.favorites = list;
@@ -104,7 +104,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                                     icon: Icon(Icons.cancel),
                                     onPressed: () {
                                       controllerText.text = '';
-                                      controller.search = '';
+                                      controller.search = null;
                                     }),
                                 suffixIcon: IconButton(
                                     icon: Icon(

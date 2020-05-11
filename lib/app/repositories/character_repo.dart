@@ -8,22 +8,25 @@ import 'package:marvel_api/constants/url.dart';
 class CharacterRepository {
   Future<List<Character>> fetchCharactersByStartsWith(String startsWith) async {
     String url = 'https://gateway.marvel.com:443/v1/public/characters?' +
-        'nameStartsWith=$startsWith&' + Constants.API_KEY;
-        //'&ts=42&apikey=592bddb193bffbeb19346961c9f3e7ab&hash=2279ddd726d556fda9e8dcb4ce95c06b';
+        'nameStartsWith=$startsWith&' +
+        Constants.API_KEY;
+    //'&ts=42&apikey=592bddb193bffbeb19346961c9f3e7ab&hash=2279ddd726d556fda9e8dcb4ce95c06b';
 
-
-    var response = await http.get(url);
-
+    var response;
     List<Character> characters = [];
 
-    if (response.statusCode == 200) {
-      Map<String, dynamic> body = jsonDecode(response.body)['data'];
+    if (startsWith != null) {
+      response = await http.get(url);
 
-      for (var item in body['results']) {
-        Character char = Character.fromJson(item);
-        //print(char.thumbnailExt);
+      if (response.statusCode == 200) {
+        Map<String, dynamic> body = jsonDecode(response.body)['data'];
 
-        characters.add(char);
+        for (var item in body['results']) {
+          Character char = Character.fromJson(item);
+          //print(char.thumbnailExt);
+
+          characters.add(char);
+        }
       }
     }
 
@@ -32,7 +35,8 @@ class CharacterRepository {
 
   Future<List<Comics>> comicsByCharacter(String charId) async {
     String url =
-        'https://gateway.marvel.com:443/v1/public/characters/$charId/comics?' + Constants.API_KEY;
+        'https://gateway.marvel.com:443/v1/public/characters/$charId/comics?' +
+            Constants.API_KEY;
 
     var response = await http.get(url);
 
