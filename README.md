@@ -1,10 +1,16 @@
 # Heroes from Marvel - Flutter Application
 
+![](lib/screenshots/inital.jpeg)
+![](lib/screenshots/seconds.jpeg)
+![](lib/screenshots/third.jpeg)
+![](lib/screenshots/fourth.jpeg)
+
 
 ## About this project
 
 The idea of this app is : 
-"Display marvel heroes and their respectives comics"
+*Display marvel heroes and their respectives comics*
+The app make the requests from the Marvel's open API, available at : https://developer.marvel.com/documentation/getting_started
 
 ## Why ?
 
