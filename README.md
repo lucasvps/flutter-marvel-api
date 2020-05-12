@@ -1,6 +1,7 @@
 # Heroes from Marvel - Flutter Application
 
-<img src='lib/screenshots/inital.jpeg' heigth='300' width='250'>
+<img src='lib/screenshots/inital.jpeg' heigth='300' width='250'> <img src='lib/screenshots/seconds.jpeg' heigth='300' width='250'>
+<img src='lib/screenshots/third.jpeg' heigth='300' width='250'> <img src='lib/screenshots/fourth.jpeg' heigth='300' width='250'>
 
 
 ## About this project
