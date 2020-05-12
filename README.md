@@ -7,7 +7,7 @@
 ## About this project
 
 The idea of this app is : 
-*Display marvel heroes and their respectives comics*
+*Display marvel heroes and their respectives comics*<br />
 The app make the requests from the Marvel's open API, available at : https://developer.marvel.com/documentation/getting_started
 
 ## Why ?
