@@ -1,9 +1,6 @@
 # Heroes from Marvel - Flutter Application
 
-![](lib/screenshots/inital.jpeg)
-![](lib/screenshots/seconds.jpeg)
-![](lib/screenshots/third.jpeg)
-![](lib/screenshots/fourth.jpeg)
+<img src='lib/screenshots/inital.jpeg' heigth='70' width='50'>
 
 
 ## About this project
