@@ -17,5 +17,5 @@ This project is part of my personal portfolio, it was made to increase my develo
 ## Functionalities
 
 - Search for heroes by name.
-- Add them to your favorites.
+- Add them to your favorites. (Using SQFlite)
 - See the comics they were part of.
